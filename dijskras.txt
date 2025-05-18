@@ -1,0 +1,41 @@
+Weighted Graph: 
+A graph where each edge has an associated weight or cost. 
+
+Source Node: 
+The starting node from which the shortest paths are calculated. 
+
+Shortest Path: 
+The path with the minimum total weight or cost from the source to a destination node. 
+
+Visited Nodes: 
+Nodes whose shortest distances from the source have been finalized. 
+
+Unvisited Nodes: 
+Nodes whose shortest distances from the source are still being explored and updated. 
+
+Algorithm Steps:
+
+Initialization: 
+Assign a distance of 0 to the source node and infinity to all other nodes. 
+
+Iteration: 
+While there are unvisited nodes: 
+
+Choose Current Node: 
+Select the unvisited node with the smallest distance from the source. 
+
+Explore Neighbors: 
+For each neighbor of the current node, calculate the distance from the source through the current node. 
+
+Update Distances: 
+If the newly calculated distance is shorter than the current distance to the neighbor, update the neighbor's distance. 
+
+Mark Visited: 
+Mark the current node as visited. 
+
+Termination: 
+The algorithm terminates when all nodes have been visited or when the shortest paths to all reachable nodes have been found. 
+
+Implementation Notes:
+Data Structures:
+Priority queues (like min-heaps) are often used to efficiently find the unvisited node with the smallest distance. 
