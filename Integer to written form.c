@@ -44,13 +44,14 @@ int main(){
         switch (i){
         case 0: printf("Zero"); break;
         default:{
-        char h = i>99;
+        char h = i>99 + 1;
+        char t = i%100;
+        char d = t>0;
                 switch (h){
-                        case 1: _1to19(i/100);printf(" Hundred");
-                        char t = i%100;
-                        char d = t>0;
-                        switch (d){case 1:printf(" and ");_1to99(t);break;}
-                        }
+                case 2: _1to19(i/100);printf(" Hundred");
+                switch (d){case 1:printf(" and ");_1to99(t);break;}
+                }
+                case 1: _1to99(t);break;
                 }
         }
         printf("\n");
