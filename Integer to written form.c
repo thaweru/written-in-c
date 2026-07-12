@@ -41,18 +41,15 @@ void _1to99(char n){
 int main(){
         int i;
         scanf("%i", &i);
-        switch (i){
-        case 0: printf("Zero"); break;
-        default:{
-        char h = i>99 + 1;
+        char h = (i>99) + (i>0);
         char t = i%100;
         char d = t>0;
-                switch (h){
+        switch (h){
+                case 0: printf("Zero"); break;
                 case 2: _1to19(i/100);printf(" Hundred");
-                switch (d){case 1:printf(" and ");_1to99(t);break;}
-                }
+                        switch (d){case 1:printf(" and ");_1to99(t);break;}
+                        break;
                 case 1: _1to99(t);break;
-                }
         }
         printf("\n");
 }
