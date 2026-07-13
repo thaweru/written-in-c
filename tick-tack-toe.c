@@ -20,9 +20,9 @@ int win_check(char p){
         if (grid[0][0]==p && grid[0][1]==p && grid[0][2]==p) return 1;
         if (grid[1][0]==p && grid[1][1]==p && grid[1][2]==p) return 1;
         if (grid[2][0]==p && grid[2][1]==p && grid[2][2]==p) return 1;
-        if (grid[0][0]==p && grid[0][1]==p && grid[0][2]==p) return 1;
-        if (grid[1][0]==p && grid[1][1]==p && grid[1][2]==p) return 1;
-        if (grid[2][0]==p && grid[2][1]==p && grid[2][2]==p) return 1;
+        if (grid[0][0]==p && grid[1][0]==p && grid[2][0]==p) return 1;
+        if (grid[0][1]==p && grid[1][1]==p && grid[2][1]==p) return 1;
+        if (grid[0][2]==p && grid[1][2]==p && grid[2][2]==p) return 1;
         if (grid[0][0]==p && grid[1][1]==p && grid[2][2]==p) return 1;
         if (grid[2][0]==p && grid[1][1]==p && grid[0][2]==p) return 1;
         return 0;
