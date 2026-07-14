@@ -43,11 +43,11 @@ int main(){
                         scanf("%i", &n);
                         grid[(n-1)/3][(n-1)%3] = 'O';
                 }
-                printf("\e[1;1H\e[2J");
+                printf("\033[8A");
                 fflush(stdout);
                 print_grid();
                 if (win_check(88 - (i%2)*9)){
-                        printf("Player %i wins", 1+(i%2));
+                        printf("\nPlayer %i wins\n", 1+(i%2));
                         break;
                 }
         }
